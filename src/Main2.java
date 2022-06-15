@@ -33,7 +33,7 @@ public class Main2 {
         FileWriter fileWriter = new FileWriter("output.TXT");
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-        bufferedWriter.write("зашифрованный текст = " + encryptedString);
+        bufferedWriter.write("crypted text = " + encryptedString);
 
         String decryptedString = "";
         for (int i = 0; i < encryptedString.length(); i++) {
@@ -55,7 +55,7 @@ public class Main2 {
         }
 
         bufferedWriter.newLine();
-        bufferedWriter.write("расшифрованный текст = " + decryptedString);
+        bufferedWriter.write("decrypted text = " + decryptedString);
 
         bufferedWriter.close();
         fileWriter.close();
